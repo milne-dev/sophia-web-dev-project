@@ -1,0 +1,19 @@
+.featured-photo {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.product-figure {
+  margin: 0 0 0.75rem;
+  max-width: 320px;
+}
+
+.product-figure figcaption {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 0.35rem;
+}
