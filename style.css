@@ -40,3 +40,13 @@ section {
 h1, h2 {
   margin-top: 0;
 }
+
+.price {
+  font-weight: 600;
+  color: #0066cc;
+}
+
+.note {
+  color: #777;
+  font-size: 0.9rem;
+}
