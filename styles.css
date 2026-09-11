@@ -68,3 +68,41 @@ h1, h2 {
   border-radius: 8px;
   display: block;
 }
+
+.hours-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  max-width: 320px;
+}
+
+.hours-list {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+.hours-list li:last-child {
+  border-bottom: none;
+}
+
+.hours-list span:first-child {
+  font-weight: 600;
+}
+
+.location {
+  margin: 0;
+  color: #555;
+}
+
+.location::before {
+  content: "\1F4CD  ";
+}
