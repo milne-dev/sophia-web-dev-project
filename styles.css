@@ -1,3 +1,10 @@
+:root {
+  --color-brown: #5c3d2e;
+  --color-gold: #c9975c;
+  --color-cream: #faf3ea;
+  --color-text: #2b211b;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -5,14 +12,14 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  color: #222;
-  background: #fafafa;
+  color: var(--color-text);
+  background: var(--color-cream);
   line-height: 1.5;
 }
 
 header {
   background: #fff;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--color-gold);
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -33,12 +40,12 @@ header {
 nav a {
   margin-right: 1rem;
   text-decoration: none;
-  color: #333;
+  color: var(--color-brown);
   font-weight: 600;
 }
 
 nav a.active {
-  color: #0066cc;
+  color: var(--color-gold);
 }
 
 main {
@@ -53,11 +60,12 @@ section {
 
 h1, h2 {
   margin-top: 0;
+  color: var(--color-brown);
 }
 
 .price {
   font-weight: 600;
-  color: #0066cc;
+  color: var(--color-gold);
 }
 
 .product-photo {
@@ -71,7 +79,7 @@ h1, h2 {
 
 .hours-card {
   background: #fff;
-  border: 1px solid #eee;
+  border: 1px solid var(--color-gold);
   border-radius: 8px;
   padding: 1.25rem 1.5rem;
   max-width: 320px;
@@ -87,7 +95,7 @@ h1, h2 {
   display: flex;
   justify-content: space-between;
   padding: 0.4rem 0;
-  border-bottom: 1px dashed #ddd;
+  border-bottom: 1px dashed var(--color-gold);
 }
 
 .hours-list li:last-child {
@@ -96,11 +104,12 @@ h1, h2 {
 
 .hours-list span:first-child {
   font-weight: 600;
+  color: var(--color-brown);
 }
 
 .location {
   margin: 0;
-  color: #555;
+  color: var(--color-text);
 }
 
 .location::before {
