@@ -2,3 +2,31 @@
   color: #777;
   font-size: 0.9rem;
 }
+
+/* Mobile first: stacked column by default */
+.products-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.products-grid .product-photo {
+  max-width: 100%;
+}
+
+/* Larger devices: lay products out in a single row */
+@media (min-width: 700px) {
+  main {
+    max-width: 960px;
+  }
+
+  .products-grid {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .products-grid section {
+    flex: 1;
+    margin-bottom: 0;
+  }
+}
