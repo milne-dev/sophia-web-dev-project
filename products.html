@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
+    <a href="index.html" class="logo-link">
+      <img src="assets/bakery-logo_c.png" alt="North Star Bakery" class="logo">
+    </a>
     <nav>
       <a href="index.html">Home</a>
       <a href="products.html" class="active">Products</a>
@@ -19,20 +22,26 @@
 
     <section id="breads">
       <h2>Breads</h2>
+      <img src="assets/bakery-bread_c.png" alt="Assorted fresh loaves in the display case" class="product-photo">
       <p>Sourdough, baguettes, and daily loaves baked fresh each morning.</p>
       <p class="price">$4 &ndash; $9</p>
     </section>
 
     <section id="pastries">
       <h2>Pastries</h2>
+      <picture>
+        <source media="(min-width: 600px)" srcset="assets/bakery-feature-large_c.png">
+        <img src="assets/bakery-feature-small_c.png" alt="Pastry and cookie case" class="product-photo">
+      </picture>
       <p>Croissants, danishes, and turnovers made with laminated dough.</p>
       <p class="price">$3 &ndash; $6</p>
     </section>
 
-    <section id="cakes">
-      <h2>Cakes</h2>
-      <p>Layer cakes, cupcakes, and custom celebration cakes.</p>
-      <p class="price">$20 &ndash; $60</p>
+    <section id="signature-loaf">
+      <h2>Signature Loaf</h2>
+      <img src="assets/bakery-signature-loaf_c.png" alt="North Star signature sourdough loaf" class="product-photo">
+      <p>Our hand-shaped, naturally leavened signature sourdough.</p>
+      <p class="price">$8 &ndash; $10</p>
     </section>
 
     <p class="note">Prices are approximate. Visit us in person to order &mdash; no online checkout available.</p>
