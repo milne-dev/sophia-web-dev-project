@@ -3,6 +3,8 @@
   --color-gold: #c9975c;
   --color-cream: #faf3ea;
   --color-text: #2b211b;
+  --font-heading: 'Fraunces', serif;
+  --font-body: 'Nunito', system-ui, sans-serif;
 }
 
 * {
@@ -11,7 +13,7 @@
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: var(--font-body);
   color: var(--color-text);
   background: var(--color-cream);
   line-height: 1.5;
@@ -60,6 +62,7 @@ section {
 
 h1, h2 {
   margin-top: 0;
+  font-family: var(--font-heading);
   color: var(--color-brown);
 }
 
