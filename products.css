@@ -3,6 +3,20 @@
   font-size: 0.9rem;
 }
 
+.qty-stepper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.qty-value {
+  min-width: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--color-brown);
+}
+
 /* Mobile first: stacked column by default */
 .products-grid {
   display: flex;
