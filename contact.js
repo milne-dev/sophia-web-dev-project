@@ -14,14 +14,19 @@
     const allergyError = document.getElementById('allergy-error');
 
     form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
       const isValid = allergyField.value.trim() === ALLERGY_KEY;
       allergyError.hidden = isValid;
       allergyField.setAttribute('aria-invalid', String(!isValid));
 
       if (!isValid) {
-        e.preventDefault();
         allergyField.focus();
+        return;
       }
+
+      alert("Thanks! We've got your request and will follow up soon to confirm.");
+      form.reset();
     });
 
     allergyField.addEventListener('input', () => {
