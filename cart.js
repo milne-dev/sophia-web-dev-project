@@ -70,7 +70,11 @@
   function updateStepperDisplays() {
     document.querySelectorAll('[data-qty-for]').forEach((el) => {
       const id = el.dataset.qtyFor;
-      el.textContent = cart[id] ? cart[id].qty : 0;
+      const qty = cart[id] ? cart[id].qty : 0;
+      el.textContent = qty;
+
+      const control = el.closest('.order-control');
+      if (control) control.classList.toggle('has-qty', qty > 0);
     });
   }
 
@@ -133,7 +137,7 @@
   }
 
   document.addEventListener('click', (e) => {
-    const qtyBtn = e.target.closest('.qty-btn');
+    const qtyBtn = e.target.closest('[data-action]');
     if (!qtyBtn) return;
 
     const stepper = qtyBtn.closest('[data-id]');
