@@ -91,12 +91,14 @@
   function renderCartPanel() {
     const list = document.getElementById('cart-items');
     const emptyMsg = document.getElementById('cart-empty');
+    const clearBtn = document.getElementById('cart-clear');
     if (!list) return;
 
     list.innerHTML = '';
     const entries = Object.entries(cart).filter(([, item]) => item.qty > 0);
 
     if (emptyMsg) emptyMsg.hidden = entries.length > 0;
+    if (clearBtn) clearBtn.hidden = entries.length === 0;
 
     entries.forEach(([id, item]) => {
       const li = document.createElement('li');
