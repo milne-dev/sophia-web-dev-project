@@ -17,7 +17,7 @@
         <ul id="cart-items" class="cart-items"></ul>
         <p id="cart-empty" class="cart-empty">Your list is empty. Add items from the Products page to get started.</p>
         <button id="cart-clear" type="button" class="cart-clear-btn">Clear list</button>
-        <p class="cart-note">This list is just for your reference. There's no online ordering, so bring it up when you visit or mention it on the Contact page.</p>
+        <p class="cart-note">For reference only. Bring it up in store or mention it on Contact.</p>
       </div>
     </div>
   `;
